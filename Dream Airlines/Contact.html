@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dream Enterprises</title>
+<h1>Dream Enterprises</h1>
+<style>
+h1 { text-align: center;
+	 color:#99CCFF;}
+nav li {display: inline;}
+nav a {text-decoration: none;
+	   padding: 10px
+	   font-weight: bold;}
+nav a:link {color: #99CCFF;}
+nav a:visited {color: #EAEAEA;}
+nav a:hover {color: #0000FF;}
+body { color: #FFFFFF;
+	   background-color: #FFFFFF;
+	   background-size: cover;
+	   background-repeat: no-repeat;
+	   height: 100%;}
+footer {color: #0000FF;}
+br {color:#000000;}
+label {color:#000000;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #207db3;
+    padding: 20px;
+}
+</style>
+<meta charset="utf-8">
+</head>
+<nav>
+<ul> 
+	<li><a href="Index.html">Home</a></li>
+	<li><a href="Flights.html">Flights</a></li>
+	<li><a href="Resorts.html">Resorts</a></li>
+	<li><a href="Contact.html">Contact</a></li>
+</nav>
+<body background="http://www.ibackgroundwallpaper.com/wp-content/uploads/2014/01/Matira-Point-Bora-Bora-French-Polynesia.jpg">
+<center><h1 style="color:#FFFFFF">Dream Airlines</h1>
+<h3>Contact Us</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Select Country</option>
+	  <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<h1 style="color:#FFFFFF">Come In and Speak With an Agent Today!</h1>
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div>
+<div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+<div><small><a href="https://buywebsitetrafficreviews.org/trafficwebsites/">real traffic source is your most trusted source of top quality and real web traffic</a></small></div>
+<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(43.642505,-79.38736189999997),mapTypeId: google.maps.MapTypeId.ROADMAP};
+map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.642505,-79.38736189999997)});
+infowindow = new google.maps.InfoWindow({content:'<strong style="color:#000000">Dream Airlines</strong><strong style="color:#000000"><br>301 Front St W, Toronto, ON M5V 2T6</strong></br>'});google.maps.event.addListener(marker, 'click', function()
+{infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+<center><p style="color:#333333">Contact</p></center>
+</body>
+<center><footer> &copy; Copyright 2017 Dream Enterprises.  All rights reserved.</footer></center>
+</html>
